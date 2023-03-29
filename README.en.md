@@ -196,16 +196,16 @@ http://localhost:3002/
 
 #### Docker Compose
 
-[Hub Address](https://hub.docker.com/repository/docker/chenzhaoyu94/chatgpt-web/general)
+[Hub Address](https://hub.docker.com/repository/docker/chrhong/chatai/general)
 
 ```yml
 version: '3'
 
 services:
   app:
-    image: chenzhaoyu94/chatgpt-web # always use latest, pull the tag image again when updating
+    image: chrhong:chatai
     ports:
-      - 127.0.0.1:3002:3002
+      - 127.0.0.1:10086:10086
     environment:
       # one of two
       OPENAI_API_KEY: xxxxxx

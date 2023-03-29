@@ -2,9 +2,9 @@ version: '3'
 
 services:
   app:
-    image: chenzhaoyu94/chatgpt-web # 总是使用latest,更新时重新pull该tag镜像即可
+    image: chrhong/chatai # 总是使用latest,更新时重新pull该tag镜像即可
     ports:
-      - 3002:3002
+      - 10086:10086
     environment:
       # 二选一
       OPENAI_API_KEY: sk-xxx

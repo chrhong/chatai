@@ -202,16 +202,16 @@ http://localhost:3002/
 
 #### Docker compose
 
-[Hub 地址](https://hub.docker.com/repository/docker/chenzhaoyu94/chatgpt-web/general)
+[Hub 地址](https://hub.docker.com/repository/docker/chrhong/chatai/general)
 
 ```yml
 version: '3'
 
 services:
   app:
-    image: chenzhaoyu94/chatgpt-web # 总是使用 latest ,更新时重新 pull 该 tag 镜像即可
+    image: chrhong:chatai
     ports:
-      - 127.0.0.1:3002:3002
+      - 127.0.0.1:10086:10086
     environment:
       # 二选一
       OPENAI_API_KEY: sk-xxx

@@ -1,13 +1,14 @@
 {
-  "name": "chatgpt-web",
-  "version": "2.10.8",
+  "name": "chatai",
+  "version": "1.0.0",
   "private": false,
-  "description": "ChatGPT Web",
-  "author": "ChenZhaoYu <chenzhaoyu1994@gmail.com>",
+  "description": "ChatAI",
+  "author": "chrhong <hongguochun@hotmail.com>",
   "keywords": [
     "chatgpt-web",
     "chatgpt",
     "chatbot",
+    "chatai",
     "vue"
   ],
   "scripts": {
