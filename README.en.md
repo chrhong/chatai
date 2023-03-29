@@ -185,13 +185,13 @@ pnpm dev
 docker build -t chatgpt-web .
 
 # foreground operation
-docker run --name chatgpt-web --rm -it -p 127.0.0.1:3002:3002 --env OPENAI_API_KEY=your_api_key chatgpt-web
+docker run --name chatgpt-web --rm -it -p 127.0.0.1:10086:10086 --env OPENAI_API_KEY=your_api_key chatgpt-web
 
 # background operation
-docker run --name chatgpt-web -d -p 127.0.0.1:3002:3002 --env OPENAI_API_KEY=your_api_key chatgpt-web
+docker run --name chatgpt-web -d -p 127.0.0.1:10086:10086 --env OPENAI_API_KEY=your_api_key chatgpt-web
 
 # running address
-http://localhost:3002/
+http://localhost:10086/
 ```
 
 #### Docker Compose
@@ -239,7 +239,7 @@ The `OPENAI_API_MODEL` is optional and only used when setting the `OPENAI_API_KE
 
 | Environment Variable | Required | Description                                                                                       |
 | -------------------- | -------- | ------------------------------------------------------------------------------------------------- |
-| `PORT`               | Required | Default: `3002`                                                                                   |
+| `PORT`               | Required | Default: `10086`                                                                                   |
 | `AUTH_SECRET_KEY`         | Optional | access password                                                                          |
 | `TIMEOUT_MS`         | Optional | Timeout in milliseconds                                                                      |
 | `OPENAI_API_KEY`     | Optional | Required for `OpenAI API`. `apiKey` can be obtained from [here](https://platform.openai.com/overview). |
